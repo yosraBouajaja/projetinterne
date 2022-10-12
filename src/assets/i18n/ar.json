@@ -1,0 +1,210 @@
+{
+    "Buttons": {
+      "ajout": "إضافة",
+      "Enregistrer": "يحفظ",
+      "Valider":"أكد",
+      "Annuler":"لالغاء",
+      "Confirmer":"أكد",
+      "Quitter":"اغلاق ",
+      "Recherche":"بحث",
+      "Selectionner":"تحديد",
+      "Demarrer":"بداية",
+      "Voyage":"رحلة",
+      "Cloturer":"اغلاق ",
+      "Dem":"بداية",
+      "Charg":"جار التحميل",
+      "demandAdd":"تم إرسال الطلب بنجاح"
+    },
+
+    "Loading": {
+        "Vpatienter": "الرجاء الإنتظار",
+        "Chargement": ""
+      },
+
+    "Login": {
+        "Code": "رمز",
+        "NomU": "إسم المستخدم",
+        "Pass": "كلمة السر",
+        "Remember": "حفظ البيانات",
+        "Connect": "تسجيل الدخول",
+        "AlerteIns": "مؤسسة مسجلة بنجاح",
+        "AlerteProb": "اسم المستخدم / كلمة المرور خاطئ",
+        "existP":"هذه المؤسسة غير موجودة"
+    },
+
+    "Choix":{
+        "Eleve": "تلميذ",
+        "ListE": "قائمة التلاميذ",
+        "ListC": "قائمة الأقسام",
+        "Classe": "القسم",
+        "Ratt":"تعويض",
+        "Exam": "امتحان"
+
+    },
+
+    "Emplois":{
+        "AucuneS": "لا توجد حصة بعد",
+        "AucuneV": "لا سفر بعد",
+        "Lun": " ن ",
+        "Mar": " ث ",
+        "Mer": " ر ",
+        "Jeu": " خ ",
+        "Ven": " ج ",
+        "Sam": " س "
+    },
+
+    "Parametre":{
+        "Utilisateur": "المستعمل",
+        "NumTel": "رقم الهاتف",
+        "Lang": "اللغات",
+        "Deconnecter": "تسجيل الخروج",
+        "Fr":"الفرنسية",
+        "En":"الإنجليزية",
+        "Ar":"العربية",
+        "Manote":"درجتي",
+        "Cnote":"نتيجة القسم"
+    },
+
+    "Menu":{
+        "Examen": "الامتحانات",
+        "Carnet": "دفتر العلامات",
+        "Exercice": "تمارين",
+        "Observations": "ملاحظات",
+        "Cours&tp": "الدروس و التطبيق",
+        "Inscription": "التسجيل",
+        "MesEleve": "تلاميذي",
+        "Voyage":"رحلة"
+    },
+
+    "MenuGauche":{
+        "Bonjour": "مرحبا",
+        "Accueil": "الصفحة الرئيسية",
+        "Examens": "الامتحانات",
+        "Carnets": "دفتر العلامات",
+        "Cours&tp": "الدروس و التطبيق",
+        "Inscription": "التسجيل",
+        "Exercices": "التمارين",
+        "Observations": "ملاحظات",
+        "ChoixE":"اختيار التلميذ",
+        "Deconnecter":"تسجيل الخروج",
+        "DemandeAd":"المطالب الإدارية",
+        "ChoixC":"اختيار القسم"
+    },
+
+    "ExamenDetail":{
+        "Notes": "الأعداد",
+        "Coefficient": "الضارب",
+        "Type": "النوع",
+        "Note": "العدد",
+        "StatDev": "احصائيات الامتحان",
+        "Oral":"شفوي",
+        "DevCont1":"فرض مراقبة 1",
+        "DevCont2":"فرض مراقبة 2",
+        "DevSyn":"فرض تاليفي",
+        "cree":"انشأ من قبل"
+    },
+
+    "ExerciceDetail":{
+        "Exercice": "التمارين",
+        "Description": "الوصف",
+        "TravailAfaire": "واجب منزلي ل"
+    },
+
+    "Observation":{
+        "Annonces": "الإعلانات",
+        "Annonce": "الاعلان",
+        "Notifications": "الإعلام",
+        "Message": "رسالة"
+    },
+
+    "Cours&Tp":{
+        "Cours": "الدروس",
+        "Tp": "التطبيق",
+        "Fichier": "الملف",
+        "Video": "فيديو",
+        "addCours":"اضافة درس",
+        "addTp":"تطبيق اضافة",
+        "dateCours": " تاريخ الدرس ",
+        "dateTp": "تاريخ التطبيق",
+        "afaire":"تحميل"
+    },
+
+    "DetailTP":{
+        "Telecharger": "تحميل",
+        "TravauxP": "التطبيق"
+    },
+
+    "DetailCours":{
+        "Description": "الوصف",
+        "Fichier": "الملف",
+        "Telecharger": "تحميل"
+    },
+
+    "DemandeAd":{
+        "Choix": "اختر نوع طلبك",
+        "ListD": "قائمة الطلبات",
+        "AutreType": "أضف نوعًا آخر",
+        "Autre": "آخر",
+        "Envoyer": "إرسال" ,
+        "Encours":"جارية",
+        "Traiter":"جاهزة"
+    },
+
+    "Absence":{
+        "Absence": "غياب",
+        "Matiere": " المواد",
+        "Heure": "ساعة",
+        "Jour": "يوم",
+        "Present": "حاضر",
+        "Absent": "غائب"
+    },
+
+    "Eleve":{
+        "ListE": "قائمة التلاميذ",
+        "Pere": "الأب",
+        "Mere": "الأم",
+        "Nom&Pre": "الإسم واللقب",
+        "Adresse": "عنوان",
+        "NumTel": "رقم الهاتف",
+        "AddActuelle": "العنوان الحالي",
+        "LieuNaiss": "مكان الولادة",
+        "ListNote": "قائمة الأعداد",
+        "Matiere": "المادة",
+        "Type": "النوع",
+        "Coefficient": "الضارب",
+        "Note": "العدد"
+    },
+
+    "AddEns":{
+        "Sujet": "الموضوع",
+        "Description": "الوصف",
+        "Matiere": "المادة",
+        "Document": "الملف",
+        "DateLim": "تاريخ محدد",
+        "AjouterEx": "إضافة تمرين"
+    },
+
+    "AddVoyage":{
+        "AlerteAddCircuit": "يجب عليك تحديد المسلك",
+        "AlerteAddVahicule": "يجب عليك اختيار سيارة",
+        "AddVoyage": "أضف رحلة",
+        "Circuit": "مسلك",
+        "Type": "النوع",
+        "Aller": "الذهاب",
+        "Retour": "الرجوع",
+        "Vehicule": "المركبة",
+        "DateDepart": "تاريخ المغادرة",
+        "ListEleve": "قائمة التلاميذ",
+        "Voyage": "رحلة",
+        "AlerteDemarrer": "هل تريد حقًا أن تبدأ هذه الرحلة",
+        "AlerteCloturer": "هل تريد حقًا إنهاء هذه الرحلة",
+        "Notification":"إعلامات",
+        "cir":"لا رحلة بعد",
+        "exist":"هذا الطالب موجود في القائمة",
+        "selc":"يجب اختيار جميع الطلاب"
+    },
+    "Bull":{
+        "Bulletin":"قائمة دفتر العلامات",
+        "Bulletin1":"دفتر العلامات"
+    }
+}

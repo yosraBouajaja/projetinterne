@@ -1,0 +1,39 @@
+
+<ion-header [translucent]="true">
+  <ion-toolbar mode='ios'>
+    
+    <ion-title style='color: gray;' >
+      {{ 'Buttons.Voyage' | translate }}
+    </ion-title>
+    <ion-icon name="close-outline"  style="width: 45px;height: 45px; margin-left: 300px; color: darkgrey;"  (click)="close()"></ion-icon>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" >
+  <ion-list lines='none' style=" height: 634px; background: linear-gradient(to right, #ffffff, #f8f8f8);">
+    <ion-card >
+      <ion-card-header>
+        <ion-card-subtitle></ion-card-subtitle>
+        
+        <ion-card-title> <b style="color: #3e8fca;">  {{voyage.dateDepart| date:'dd-MM-yy'}} </b> </ion-card-title>
+        <ion-card-subtitle  > <b>{{ 'AddVoyage.Circuit' | translate }} :</b> {{voyage.circuit.nomFr}}</ion-card-subtitle>
+        <br>
+        <p style='text-align: right;'> {{ 'AddVoyage.Vehicule' | translate }} : {{voyage.vehicule.name}}</p>
+      </ion-card-header>
+    </ion-card>
+    <ion-card *ngIf="voyage.voyageAttendances.length">
+      <ion-card-title style="font-size: 20px; color: #3e8fca; margin: 20px;">  <b>{{ 'Choix.ListE' | translate }}</b></ion-card-title>
+      <ion-list>
+        <ion-card *ngFor="let item of list">
+          <ion-card-header>
+            <ion-card-subtitle> {{item.cl}} </ion-card-subtitle>
+            <ion-card-title>{{item.et}} </ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-list>
+    </ion-card>
+
+
+  </ion-list>
+</ion-content>

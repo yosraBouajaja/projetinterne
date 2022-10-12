@@ -1,0 +1,55 @@
+<ion-header [translucent]="true">
+  <ion-toolbar mode='ios'>
+    <ion-title>
+
+      <ion-img class="toolimage" src='../../assets/title.png'></ion-img>
+
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="background-imageD">
+
+  <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+  <ion-list style="background-color: var(--background);">
+    <div class="timeline">
+      <div *ngFor="let item of listV" class="timeline-event">
+
+        <div class="timeline-point-track-container">
+          <div class="timeline-point" >
+          </div>
+
+
+
+          <div class="timeline-track">
+          </div>
+        </div>
+        
+        <ion-card style="width: 100%;padding: 5px 0; background-color: #c5d2df38;" (click)="showModal(item)">
+          <div class="timeline-content">
+            <ion-row style="margin-bottom: 10px;">
+              <ion-col size="6">
+                <ion-label style="font-size: 20px; color: #3e8fca;">  <b> {{item.dateDepart | date:'dd-MM-yy'}}</b></ion-label>
+              </ion-col>
+              <ion-col size="6">
+                <ion-row>
+                  <ion-badge style="background: #f3f57a;color: black; margin-left: auto;">{{item.vehicule.name}}
+                  </ion-badge>
+                </ion-row>
+
+              </ion-col>
+            </ion-row>
+
+            <span class="timeline-date" style="color: rgb(77, 74, 74);">{{ 'AddVoyage.Circuit' | translate }} : <b>{{item.circuit.nomFr}}</b> </span>
+
+
+
+          </div>
+        </ion-card>
+      </div>
+    </div>
+  </ion-list>
+
+</ion-content>

@@ -1,0 +1,13 @@
+
+ion-list{    overflow: auto;
+}
+
+.overflow {
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  ion-item{
+    --border-style:none !important;
+  }

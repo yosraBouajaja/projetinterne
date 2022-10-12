@@ -1,0 +1,210 @@
+{
+    "Buttons": {
+      "ajout": "Ajouter",
+      "Enregistrer": "Enregistrer",
+      "Valider":"Valider",
+      "Annuler":"Annuler",
+      "Confirmer":"Confirmer",
+      "Quitter":"Quitter",
+      "Recherche":"Rechercher",
+      "Selectionner":"Sélectionner",
+      "Demarrer":"Demarrer",
+      "Voyage":"Voyage",
+      "Cloturer":"Clôturer",
+      "Dem":"Démarré",
+      "Charg":"Chargement en cours...",
+      "demandAdd":"Demande envoyée avec succès"
+    },
+
+    "Loading": {
+        "Vpatienter": "Veuillez patienter",
+        "Chargement": ""
+      },
+
+    "Login": {
+        "Code": "Code",
+        "NomU": "Nom d'utilisateur",
+        "Pass": "Mot de Passe",
+        "Remember": "Se souvenir de moi",
+        "Connect": "Se connecter",
+        "AlerteIns": "Institution enregistrée avec succès",
+        "AlerteProb": "Utilisateur/Mot de passe eronné",
+        "existP":"Cette institution n'existe pas"
+    },
+
+    "Choix":{
+        "Eleve": "Élève",
+        "ListE": "Liste des élèves",
+        "ListC": "Liste des classes",
+        "Classe": "Classe",
+        "Ratt":"Rattrapage",
+        "Exam": "Devoir"
+
+    },
+
+    "Emplois":{
+        "AucuneS": "Aucune Séance encore",
+        "AucuneV": "Aucun Voyage encore",
+        "Lun": "Lun",
+        "Mar": "Mar",
+        "Mer": "Mer",
+        "Jeu": "Jeu",
+        "Ven": "Ven",
+        "Sam": "Sam"
+    },
+
+    "Parametre":{
+        "Utilisateur": "Utilisateur",
+        "NumTel": "Numéro de téléphone",
+        "Lang": "Langues",
+        "Deconnecter": "Se déconnecter",
+        "Fr":"Français",
+        "En":"Anglais",
+        "Ar":"Arabe",
+        "Manote":"Ma note",
+        "Cnote":"Note du classe"
+    },
+
+    "Menu":{
+        "Examen": "Examens",
+        "Carnet": "Carnets",
+        "Exercice": "Exercices",
+        "Observations": "Observations",
+        "Cours&tp": "Cours & TP",
+        "Inscription": "Inscription",
+        "MesEleve": "Mes élèves",
+        "Voyage":"Voyage"
+    },
+
+    "MenuGauche":{
+        "Bonjour": "Bonjour",
+        "Accueil": "Accueil",
+        "Examens": "Examens",
+        "Carnets": "Carnets",
+        "Cours&tp": "Cours & TP",
+        "Inscription": "Inscription",
+        "Exercices": "Exercices",
+        "Observations": "Observations",
+        "ChoixE":"Choix élève",
+        "Deconnecter":"Se déconnecter",
+        "DemandeAd":"Demande administratives",
+        "ChoixC":"Choix Classe"
+    },
+
+    "ExamenDetail":{
+        "Notes": "Notes",
+        "Coefficient": "Coefficient",
+        "Type": "Type",
+        "Note": "Note",
+        "StatDev": "Statistiques du devoir",
+        "Oral":"Orale",
+        "DevCont1":"Devoir de Contrôle 1",
+        "DevCont2":"Devoir de Contrôle 2",
+        "DevSyn":"Devoir de Synthèse",
+        "cree":"Crée par"
+    },
+
+    "ExerciceDetail":{
+        "Exercice": "Exercice",
+        "Description": "Description",
+        "TravailAfaire": "Travail à faire le"
+    },
+
+    "Observation":{
+        "Annonces": "Annonces",
+        "Annonce": "Annonce",
+        "Notifications": "Notifications",
+        "Message": "Message"
+    },
+
+    "Cours&Tp":{
+        "Cours": "Cours",
+        "Tp": "Tp",
+        "Fichier": "Fichier",
+        "Video": "Vidéo",
+        "addCours":"Ajouter Cours",
+        "addTp":"Ajouter Tp",
+        "dateCours": "Date du cours",
+        "dateTp": "Date du tp",
+        "afaire":"Travail à faire pour le"
+    },
+
+    "DetailTP":{
+        "Telecharger": "Télécharger",
+        "TravauxP": "Travaux pratiques"
+    },
+
+    "DetailCours":{
+        "Description": "Description",
+        "Fichier": "Fichier",
+        "Telecharger": "Télécharger"
+    },
+
+    "DemandeAd":{
+        "Choix": "Choisir le type de votre demande",
+        "ListD": "Liste des demandes",
+        "AutreType": "Ajouter autre type",
+        "Autre": "Autre",
+        "Envoyer": "Envoyer" ,
+        "Encours":"En cours",
+        "Traiter":"Traiter"
+    },
+
+    "Absence":{
+        "Absence": "Absence",
+        "Matiere": " Matière",
+        "Heure": "Heure",
+        "Jour": "Jour",
+        "Present": "Présent",
+        "Absent": "Absent"
+    },
+
+    "Eleve":{
+        "ListE": "Liste des élèves",
+        "Pere": "Père",
+        "Mere": "Mère",
+        "Nom&Pre": "Nom et prèenom",
+        "Adresse": "Adresse",
+        "NumTel": "Numéro de téléphone",
+        "AddActuelle": "adresse actuelle",
+        "LieuNaiss": "Lieu de naissance",
+        "ListNote": "Liste des notes",
+        "Matiere": "Matière",
+        "Type": "Type",
+        "Coefficient": "Coefficient",
+        "Note": "Note"
+    },
+
+    "AddEns":{
+        "Sujet": "Sujet",
+        "Description": "Description",
+        "Matiere": "Matière",
+        "Document": "Document",
+        "DateLim": "Date limite",
+        "AjouterEx": "Ajouter exercice"
+    },
+
+    "AddVoyage":{
+        "AlerteAddCircuit": "Vous devez sélectionner un circuit",
+        "AlerteAddVahicule": "Vous devez sélectionner un véhicule",
+        "AddVoyage": "Ajouter voyage",
+        "Circuit": "Circuit",
+        "Type": "Type",
+        "Aller": "Aller",
+        "Retour": "Retour",
+        "Vehicule": "Véhicule",
+        "DateDepart": "Date départ",
+        "ListEleve": "Liste des élèves",
+        "Voyage": "Voyage",
+        "AlerteDemarrer": "Voulez-vous vraiment démarrer ce voyage",
+        "AlerteCloturer": "Voulez-vous vraiment clôturer ce voyage",
+        "Notification":"Notifications",
+        "cir":"Aucune circuit",
+        "exist":"Cet élève existe déjà dans la liste",
+        "selc":"Tous les élèves doivent être sélectionnés"
+    },
+    "Bull":{
+        "Bulletin":"Liste des bulletins",
+        "Bulletin1":"Bulletin"
+    }
+}
