@@ -14,6 +14,7 @@ export class HomeworkPage implements OnInit {
   lsthomework = [];
   lstmatieres = [];
   lstusers = [];
+  // test = ''
   constructor(private menu: MenuController, private US: UserService, private modalCtrl: ModalController, private translate: TranslateService) {
     // this language will be used as a fallback when a translation isn't found in the current language
     this.translate.setDefaultLang(localStorage.getItem('langage'));

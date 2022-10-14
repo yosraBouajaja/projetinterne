@@ -143,7 +143,10 @@ export class DevoirsEnPage implements OnInit {
   }
 
   SerializeJSONDL(ch: string, ch2: string) {
-    ch = ch.replace(ch2, '');
+    if(ch){
+
+      ch = ch.replace(ch2, '');
+    }
     return ch;
   }
 

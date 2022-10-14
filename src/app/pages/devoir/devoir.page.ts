@@ -74,7 +74,7 @@ export class DevoirPage implements OnInit {
   user; switch = false;
   bars: Chart;
   @ViewChild('barChart', { static: false }) barChart: any;
-  lstTypeE;
+  lstTypeE=[];
 
   constructor(private nav: NavController, private modalCtrl: ModalController,
     private menu: MenuController, private US: UserService, private translate: TranslateService) {
@@ -116,6 +116,8 @@ export class DevoirPage implements OnInit {
 
   getExamenType(index) {
     var type = this.SerializeJSONDL(index, "/api/examen_types/");
+    console.log(index);
+    
     for (let i = 0; i < this.lstTypeE.length; i++) {
       if (this.lstTypeE[i].id == Number(type)) {
         return this.lstTypeE[i].nomFr;
@@ -182,7 +184,11 @@ export class DevoirPage implements OnInit {
 
   }
   SerializeJSONDL(ch: string, ch2: string) {
-    ch = ch.replace(ch2, '');
+    if(ch){
+
+      ch = ch.replace(ch2, '');
+    }
+
     return ch;
   }
 

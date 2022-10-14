@@ -168,6 +168,22 @@ export class UserService {
     })
     return this.http.get<any>(this.apiUrl + '/api/classes/' + id + '?pagination=false', { headers: headers });
   }
+  getCurrentScolaire(){
+    const headers = new HttpHeaders({
+      'Content-Type': 'application/json',
+      'Authorization': `Bearer ${localStorage.getItem('token')}`
+      //'Authorization': `Bearer ${this.auth_token}`
+    })
+    return this.http.get<any>(this.apiUrl + '/api/current_annee_scolaire' , { headers: headers });
+  }
+  getAnneeScolaire(annee) {
+    const headers = new HttpHeaders({
+      'Content-Type': 'application/json',
+      'Authorization': `Bearer ${localStorage.getItem('token')}`
+      //'Authorization': `Bearer ${this.auth_token}`
+    })
+    return this.http.get<any>(this.apiUrl + annee , { headers: headers });
+  }
 
   getSalle(id) {
     const headers = new HttpHeaders({
@@ -464,7 +480,10 @@ export class UserService {
   showtoken() {
   }
   SerializeJSONDL(ch: string, ch2: string) {
-    ch = ch.replace(ch2, '');
+    if(ch){
+
+      ch = ch.replace(ch2, '');
+    }
     return ch;
   }
   getusers(token) {

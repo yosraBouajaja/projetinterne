@@ -4,6 +4,8 @@
   <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
     <ion-refresher-content></ion-refresher-content>
   </ion-refresher>
+  <h4 *ngIf="lstAnnon.length == 0" style="text-align: center; font-size: 15px;">Aucune annonce</h4>
+
   <ng-container *ngFor="let item of lstAnnon" >
     <ion-card  (click)="showModal(item)">
       <ion-card-content>

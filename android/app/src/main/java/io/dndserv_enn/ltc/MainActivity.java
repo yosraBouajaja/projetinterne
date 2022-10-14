@@ -4,6 +4,8 @@ import android.app.AlertDialog;
 import android.app.DownloadManager;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
 
@@ -36,8 +38,14 @@ public class MainActivity extends BridgeActivity {
   @Override
   public void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-      currentV = BuildConfig.VERSION_NAME;
-    requestQueue = Volley.newRequestQueue(MainActivity.this);
+      PackageInfo pInfo = null;
+      try {
+          pInfo = getPackageManager().getPackageInfo(getPackageName(),0);
+      } catch (PackageManager.NameNotFoundException e) {
+          e.printStackTrace();
+      }
+      currentV = pInfo.versionName;
+      requestQueue = Volley.newRequestQueue(MainActivity.this);
       activityM = this;
       appPackageName = getPackageName();
 

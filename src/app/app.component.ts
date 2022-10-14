@@ -9,7 +9,8 @@ import { environment } from 'src/environments/environment';
 import { CheckUpdateService } from './Services/check-update.service';
 import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
 // import { Geolocation } from '@awesome-cordova-plugins/geolocation/ngx';
-//import { Geolocation} from '@capacitor/core';
+import { Geolocation} from '@capacitor/core';
+
 import { OpenNativeSettings } from '@awesome-cordova-plugins/open-native-settings/ngx';
 import { Globalization } from '@awesome-cordova-plugins/globalization/ngx';
 import {  Router } from '@angular/router';
@@ -91,16 +92,17 @@ export class AppComponent {
     
     //   console.log("info,info",info);
     // };
+    this.getLocation()
   }
 
-  // async getLocation() {
-  //   const position = await Geolocation.getCurrentPosition();
-  //   this.latitude = position.coords.latitude;
-  //   this.longitude = position.coords.longitude;
-  //   console.log(this.latitude,this.longitude);
-  //   this.getLocation2();
+  async getLocation() {
+    const position = await Geolocation.getCurrentPosition();
+    this.latitude = position.coords.latitude;
+    this.longitude = position.coords.longitude;
+    console.log(this.latitude,this.longitude);
+    this.getLocation2();
     
-  // }
+  }
 
   disconnect(){
     //localStorage.clear();

@@ -21,12 +21,12 @@ export class ChoiceStudentPage implements OnInit {
     this.menu.close();
   }
   lstetudiant:any;
-  
+  error:boolean;
   ngOnInit() {
     var lan;
-    // this.US.GetParametre(localStorage.getItem('token')).subscribe(val=>{
-    //   console.log("GetEducoUrl",val);
-    // });
+    this.US.GetParametre(localStorage.getItem('token')).subscribe(val=>{
+      console.log("GetEducoUrl",val);
+    });
 
     // this.US.GetEducoUrl(localStorage.getItem('token')).subscribe(val=>{
     //   console.log("GetEducoUrl",val);
@@ -112,16 +112,22 @@ export class ChoiceStudentPage implements OnInit {
     ch=etudiant.anneeScolaire.replace('/api/annee_scolaires/', '')
    
     localStorage.setItem('anneeScolaire',ch);
-  
-    ch=etudiant.groupClasse.nomFr
-    console.log(ch);
-    
-    localStorage.setItem('groupClasse',ch)  
-   
 
-   
+    if(!etudiant.groupClasse){
+      this.error=true
+      console.log('------------------------------------------------------------');
+      
+    }else{
 
-   this.nav.navigateRoot('/tabs/tab2');
+      ch=etudiant.groupClasse.nomFr
+      console.log(ch);
+      localStorage.setItem('groupClasse',ch)  
+      
+      
+      
+      
+      this.nav.navigateRoot('/tabs/tab2');
+    }
    });
   //@ts-ignore
   /*  

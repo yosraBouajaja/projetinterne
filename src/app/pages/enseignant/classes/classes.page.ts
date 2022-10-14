@@ -12,6 +12,8 @@ import { TranslateService } from '@ngx-translate/core';
 export class ClassesPage implements OnInit {
   lstclasses = [];
   classes = [];
+  anneeScolaire_ = null
+  currentAnnee = null
   constructor(private nav: NavController, private menu: MenuController, private US: UserService, private translate: TranslateService) {
     // this language will be used as a fallback when a translation isn't found in the current language
   }
@@ -46,13 +48,45 @@ export class ClassesPage implements OnInit {
       var x: Subscription
       for (let i = 0; i <= this.lstclasses.length; i++) {
         x = this.US.GetClasse(this.lstclasses[i]).subscribe(value => {
-          this.classes.push(value);
+          
+        this.US.getAnneeScolaire(value.anneeScolaire).subscribe(val =>{
+          this.US.getCurrentScolaire().subscribe(v =>{
+            console.log('id----------v',v[0].id);
+            console.log('id----------val',val.id);
+
+            if(v[0].id == val.id){
+
+            
+
+              this.classes.push(value)
+              console.log(this.classes);
+              
+            }
+          })
+
+
+
+        })
+            console.log('----------------this.lstclasses[i].anneeScolaire',this.lstclasses[i].anneeScolaire);
+            
+            console.log('-----------------------this.anneeScolaire_',this.anneeScolaire_);
+            this.currentAnnee = this.US.getCurrentScolaire()
+            // if(){
+            //   this.classes.push(value);
+            // }
+          
+
           x.unsubscribe();
         });
       }
     })
   }
 
+
+  getAnneeScolaire(annee){
+    
+    return
+  }
 
   exist(ch) {
     var ok = false

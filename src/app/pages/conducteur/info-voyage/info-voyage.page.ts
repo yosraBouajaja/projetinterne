@@ -56,10 +56,10 @@ export class InfoVoyagePage implements OnInit {
             if(typeof item.classe === 'object'){
               let id = item.classe.id;
               item.classe = this.getClasseId(id);
-              this.newStudents.push(item);
-            }else{
-              this.newStudents.push(item);
-            }            }
+            }
+            this.newStudents.push(item);
+
+           }
           }
         }
         
