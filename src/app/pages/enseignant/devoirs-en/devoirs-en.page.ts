@@ -4,6 +4,7 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { Chart } from 'chart.js';
 import * as moment from 'moment';
 import { TranslateService } from '@ngx-translate/core';
+import { LoadingController } from '@ionic/angular';
 @Component({
   selector: 'app-devoirs-en',
   templateUrl: './devoirs-en.page.html',
@@ -13,7 +14,7 @@ export class DevoirsEnPage implements OnInit {
   bars: Chart;
   @ViewChild('barChart', { static: false }) barChart: any;
   constructor(private nav: NavController, private modalCtrl: ModalController, private menu: MenuController,
-    private US: UserService, private translate: TranslateService) {
+    private US: UserService, private translate: TranslateService,public loadingController: LoadingController) {
     // this language will be used as a fallback when a translation isn't found in the current language
     this.translate.setDefaultLang(localStorage.getItem('langage'));   }
 
@@ -47,6 +48,19 @@ export class DevoirsEnPage implements OnInit {
     this.US.getExamenType(localStorage.getItem('token')).subscribe(val => {
       this.lstTypeE = val;
     });
+
+    this.presentLoadingWithOptions();
+  }
+
+  async presentLoadingWithOptions() {
+    const loading = await this.loadingController.create({
+      spinner: null,
+      duration: 5000,
+      message: 'Please wait...',
+      translucent: true,
+      cssClass: 'custom-class custom-loading'
+    });
+    return await loading.present();
   }
 
   getmatiere(index) {
