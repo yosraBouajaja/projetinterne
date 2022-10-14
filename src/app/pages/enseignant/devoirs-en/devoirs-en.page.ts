@@ -13,6 +13,8 @@ import { LoadingController } from '@ionic/angular';
 export class DevoirsEnPage implements OnInit {
   bars: Chart;
   @ViewChild('barChart', { static: false }) barChart: any;
+
+  
   constructor(private nav: NavController, private modalCtrl: ModalController, private menu: MenuController,
     private US: UserService, private translate: TranslateService,public loadingController: LoadingController) {
     // this language will be used as a fallback when a translation isn't found in the current language
@@ -48,7 +50,7 @@ export class DevoirsEnPage implements OnInit {
     this.US.getExamenType(localStorage.getItem('token')).subscribe(val => {
       this.lstTypeE = val;
     });
-
+    
     this.presentLoadingWithOptions();
   }
 
@@ -69,6 +71,7 @@ export class DevoirsEnPage implements OnInit {
       if (this.lstMatieres[i].id == Number(index)) {
         return this.lstMatieres[i].nomFr;
       }
+
     }
   }
 
