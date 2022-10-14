@@ -69,7 +69,6 @@ export class DevoirsEnPage implements OnInit {
       if (this.lstMatieres[i].id == Number(index)) {
         return this.lstMatieres[i].nomFr;
       }
-
     }
   }
 
